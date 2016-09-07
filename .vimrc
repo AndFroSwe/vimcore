@@ -25,6 +25,9 @@ set clipboard=unnamed
 " Always show status bar
 set laststatus=2
 
+" Always center cursor
+set so=999
+
 """ Key mappings """
 inoremap jj <Esc> " jj for normal mode
 
