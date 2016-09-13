@@ -29,5 +29,8 @@ set laststatus=2
 set so=999
 
 """ Key mappings """
-inoremap jj <Esc> " jj for normal mode
+inoremap jj <Esc>
+
+" Remap to make it easier to enter motions
+nnoremap ; :
 
