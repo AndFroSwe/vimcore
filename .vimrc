@@ -28,9 +28,14 @@ set laststatus=2
 " Always center cursor
 set so=999
 
+" Encodings
+set encoding=utf-8  " The encoding displayed.
+set fileencoding=utf-8  " The encoding written to file.
+
 """ Key mappings """
 " jj for normal mode
 inoremap jj <Esc>
 
 " Remap so that it is easier to enter motions on eng keyboards
 nnoremap ; :
+nnoremap ö :
