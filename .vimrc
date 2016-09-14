@@ -30,7 +30,7 @@ set so=999
 
 """ Key mappings """
 " jj for normal mode
-inoremap jj <Esc> 
+inoremap jj <Esc>
 
 " Remap so that it is easier to enter motions on eng keyboards
 nnoremap ; :
