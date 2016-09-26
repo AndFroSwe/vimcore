@@ -45,6 +45,9 @@ nnoremap ; :
 nnoremap ö :
 
 """ GUI Settings
-if has("gui")
-    color slate " Set color scheme
+if has("gui_running")
+    color murphy " Set color scheme
+    set guifont=Lucida\ 11
+else
+    color slate
 endif
