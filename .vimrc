@@ -1,7 +1,6 @@
 " vimrc file containing the core commands, ie using no 
 " plugins.
-" Is designed to be run even under simple terminals.
-" Author: Andreas Froderberg
+" Author: Andreas Fröderberg
 
 filetype plugin indent on
 syntax on
@@ -47,7 +46,13 @@ nnoremap ö :
 """ GUI Settings
 if has("gui_running")
     color murphy " Set color scheme
-    set guifont=Lucida\ 11
+    set guifont=Roboto\ Mono\ for\ Powerline\ 11
 else
     color slate
 endif
+
+" Remove all extra displaed items in GUI
+:set guioptions-=m  "remove menu bar
+:set guioptions-=T  "remove toolbar
+:set guioptions-=r  "remove right-hand scroll bar
+:set guioptions-=L  "remove left-hand scroll bar
