@@ -32,7 +32,7 @@ set laststatus=2
 set so=999
 
 "" Encodings
-"set encoding=utf-8  " The encoding displayed.
+set encoding=utf-8  " The encoding displayed.
 set fileencoding=utf-8  " The encoding written to file.
 
 """" Key mappings """
@@ -48,7 +48,7 @@ if has("gui_running")
     color murphy " Set color scheme
     set guifont=Roboto\ Mono\ for\ Powerline\ 11
 else
-    color slate
+    color desert
 endif
 
 " Remove all extra displaed items in GUI
