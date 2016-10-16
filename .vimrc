@@ -19,6 +19,12 @@ set backspace=2
 set ignorecase
 set smartcase
 
+"" Fuzzy search in files
+set path+=**
+
+"" Display all mathching files
+set wildmenu
+
 "" Line numbering
 set relativenumber
 
