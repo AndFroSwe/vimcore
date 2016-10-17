@@ -33,7 +33,7 @@ set laststatus=2
 set so=999
 
 "" Encodings
-"set encoding=utf-8  " The encoding displayed.
+set encoding=utf-8  " The encoding displayed.
 set fileencoding=utf-8  " The encoding written to file.
 
 """" Key mappings """
@@ -47,7 +47,7 @@ nnoremap ö :
 """ GUI Settings
 if has("gui_running")
     color murphy " Set color scheme
-    set guifont=Lucida\ 11
+    set guifont=monofur\ for\ Powerline\ 11
 else
     color slate
 endif
