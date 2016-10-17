@@ -1,7 +1,6 @@
 " vimrc file containing the core commands, ie using no 
 " plugins.
-" Is designed to be run even under simple terminals.
-" Author: Andreas Froderberg
+" Author: Andreas Fröderberg
 
 filetype plugin indent on
 syntax on
@@ -19,6 +18,12 @@ set backspace=2
 "" Smartcase search
 set ignorecase
 set smartcase
+
+"" Fuzzy search in files
+set path+=**
+
+"" Display all mathching files
+set wildmenu
 
 "" Line numbering
 set relativenumber
@@ -49,5 +54,11 @@ if has("gui_running")
     color murphy " Set color scheme
     set guifont=monofur\ for\ Powerline\ 11
 else
-    color slate
+    color desert
 endif
+
+" Remove all extra displaed items in GUI
+:set guioptions-=m  "remove menu bar
+:set guioptions-=T  "remove toolbar
+:set guioptions-=r  "remove right-hand scroll bar
+:set guioptions-=L  "remove left-hand scroll bar
