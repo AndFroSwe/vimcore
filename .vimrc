@@ -1,6 +1,6 @@
 " vimrc file containing the core commands, ie using no 
 " plugins.
-" Author: Andreas Fröderberg
+" Author: Andreas FrÃ¶derberg
 
 filetype plugin indent on
 syntax on
@@ -47,12 +47,12 @@ inoremap jj <Esc>
 
 "" Remap so that it is easier to enter motions on eng keyboards
 nnoremap ; :
-nnoremap ö :
+nnoremap Ã¶ :
 
 """ GUI Settings
 if has("gui_running")
     color murphy " Set color scheme
-    set guifont=monofur\ for\ Powerline\ 11
+    set guifont=monofur\ for\ Powerline 
 else
     color desert
 endif
