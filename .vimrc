@@ -62,3 +62,7 @@ endif
 :set guioptions-=T  "remove toolbar
 :set guioptions-=r  "remove right-hand scroll bar
 :set guioptions-=L  "remove left-hand scroll bar
+
+"" Custom commands
+" Command for compiling and running simple c++ scripts
+command Run !clear && g++ --std=c++11 % && ./a.out
