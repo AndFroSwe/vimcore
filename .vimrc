@@ -50,9 +50,9 @@ nnoremap ; :
 nnoremap ö :
 
 """ GUI Settings
+" Colorscheme has been moved to vimplugs
 if has("gui_running")
-    color murphy " Set color scheme
-    set guifont=monofur\ for\ Powerline 
+    set guifont=monofur\ for\ Powerline:h12
 else
     color desert
 endif
