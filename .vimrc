@@ -52,7 +52,9 @@ nnoremap ö :
 """ GUI Settings
 " Colorscheme has been moved to vimplugs
 if has("gui_running")
-    set guifont=monofur\ for\ Powerline:h12
+    if has("gui_gtk2") " If on ubuntu
+        set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 12
+    endif
 else
     color desert
 endif
