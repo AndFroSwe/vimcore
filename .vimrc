@@ -36,6 +36,7 @@ set laststatus=2
 
 "" Always center cursor
 set so=999
+set tw=80 " Textwidth for automatic line breaks
 
 "" Encodings
 set encoding=utf-8  " The encoding displayed.
@@ -49,10 +50,13 @@ inoremap jj <Esc>
 nnoremap ; :
 nnoremap ö :
 
+"" Remap to change <> to ""
+nnoremap <leader>ah :s/[<>]/"/g<CR>
+
 """ GUI Settings
 " Colorscheme has been moved to vimplugs
 if has("gui_running")
-    if has("gui_gtk2") " If on ubuntu
+    if has("gui_gtk3") " If on ubuntu
         set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 12
     endif
 else
