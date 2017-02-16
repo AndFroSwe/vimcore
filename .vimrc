@@ -53,6 +53,9 @@ nnoremap ö :
 "" Remap to change <> to ""
 nnoremap <leader>ah :s/[<>]/"/g<CR>
 
+"" Delete word under cursor in insert mode
+inoremap <C-d> <Esc>ciw
+
 """ GUI Settings
 " Colorscheme has been moved to vimplugs
 if has("gui_running")
