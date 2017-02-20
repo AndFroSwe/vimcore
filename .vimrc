@@ -61,6 +61,8 @@ inoremap <C-d> <Esc>ciw
 if has("gui_running")
     if has("gui_gtk3") " If on ubuntu
         set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 12
+    else "If windows
+        set guifont=Ubuntu\ Mono\ derivative\ Powerline:h12 
     endif
 else
     color desert
