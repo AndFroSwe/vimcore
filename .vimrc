@@ -29,7 +29,7 @@ set wildmenu
 set relativenumber
 
 "" Use system clipboard
-set clipboard=unnamed
+set clipboard=unnamedplus
 
 "" Always show status bar
 set laststatus=2
@@ -56,16 +56,22 @@ nnoremap <leader>ah :s/[<>]/"/g<CR>
 "" Delete word under cursor in insert mode
 inoremap <C-d> <Esc>ciw
 
+"" Navigate panes
+nnoremap <C-j> <C-w>j 
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
+nnoremap <C-k> <C-w>k
+
 """ GUI Settings
 " Colorscheme has been moved to vimplugs
 if has("gui_running")
-    if has("gui_gtk3") " If on ubuntu
+    if has("gui_gtk3") || has("gui_gtk2") " If on ubuntu
         set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 12
     else "If windows
         set guifont=Ubuntu\ Mono\ derivative\ Powerline:h12 
     endif
 else
-    color desert
+    colo slate
 endif
 
 " Remove all extra displaed items in GUI
@@ -76,4 +82,4 @@ endif
 
 "" Custom commands
 " Command for compiling and running simple c++ scripts
-command Run !clear && g++ --std=c++11 % && ./a.out
+command! Run !clear && g++ --std=c++11 % && ./a.out
