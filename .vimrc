@@ -36,7 +36,6 @@ set laststatus=2
 
 "" Always center cursor
 set so=999
-set tw=80 " Textwidth for automatic line breaks
 
 "" Encodings
 set encoding=utf-8  " The encoding displayed.
@@ -49,12 +48,6 @@ inoremap jj <Esc>
 "" Remap so that it is easier to enter motions on eng keyboards
 nnoremap ; :
 nnoremap ö :
-
-"" Remap to change <> to ""
-nnoremap <leader>ah :s/[<>]/"/g<CR>
-
-"" Delete word under cursor in insert mode
-inoremap <C-d> <Esc>ciw
 
 "" Navigate panes
 nnoremap <C-j> <C-w>j 
@@ -79,7 +72,3 @@ endif
 :set guioptions-=T  "remove toolbar
 :set guioptions-=r  "remove right-hand scroll bar
 :set guioptions-=L  "remove left-hand scroll bar
-
-"" Custom commands
-" Command for compiling and running simple c++ scripts
-command! Run !clear && g++ --std=c++11 % && ./a.out
